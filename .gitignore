@@ -1,0 +1,17 @@
+# Claude Code 로컬 설정
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# 테스트·커버리지
+.pytest_cache/
+.coverage
+htmlcov/
