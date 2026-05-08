@@ -1,0 +1,19 @@
+{
+  "host": "prod-server-01",
+  "cpu": {
+    "usage_percent": 34.5,
+    "cores": 8
+  },
+  "memory": {
+    "total_mb": 16384,
+    "used_mb": 8921,
+    "free_mb": 7463
+  },
+  "disk": {
+    "total_gb": 500,
+    "used_gb": 210,
+    "free_gb": 290
+  },
+  "uptime_hours": 720,
+  "last_updated": "2026-05-08T10:00:00Z"
+}

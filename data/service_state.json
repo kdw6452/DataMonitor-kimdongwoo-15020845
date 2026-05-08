@@ -1,0 +1,16 @@
+{
+  "service": "auth",
+  "status": "running",
+  "version": "2.1.0",
+  "metrics": {
+    "requests_per_sec": 142,
+    "error_rate": 0.02,
+    "latency_ms": 45
+  },
+  "connections": {
+    "active": 38,
+    "idle": 12,
+    "max": 100
+  },
+  "last_updated": "2026-05-08T10:00:00Z"
+}
