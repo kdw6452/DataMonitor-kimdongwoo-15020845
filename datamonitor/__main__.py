@@ -2,9 +2,15 @@ import argparse
 import sys
 import threading
 
-from .config import DEFAULT_INTERVAL, MonitorConfig
-from .monitor import DataMonitor
-from .renderer import PlainRenderer, RichRenderer
+# 직접 실행(python datamonitor/__main__.py)과 모듈 실행(-m datamonitor) 모두 지원
+if __name__ == "__main__" and __package__ is None:
+    from pathlib import Path
+    sys.path.insert(0, str(Path(__file__).parent.parent))
+    __package__ = "datamonitor"
+
+from .config import DEFAULT_INTERVAL, MonitorConfig  # noqa: E402
+from .monitor import DataMonitor  # noqa: E402
+from .renderer import PlainRenderer, RichRenderer  # noqa: E402
 
 
 def parse_args() -> argparse.Namespace:
